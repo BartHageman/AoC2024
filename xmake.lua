@@ -1,0 +1,6 @@
+add_rules("plugin.compile_commands.autoupdate", {outputdir = "./build"})
+add_includedirs("include")
+add_cxxflags("-Werror")
+target("chapter")
+  set_kind("binary")
+  add_files("src/*.cpp")
